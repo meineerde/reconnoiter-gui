@@ -1,0 +1,45 @@
+%span.rememberWorksheet
+%span.blankWorksheet New Blank
+%span.editWorksheet Editing!
+%span#wpermalink.permalink
+  %a{:href => ""} Link
+%h2#worksheetTitle.ws_title Worksheet Title
+%div
+  #ws_datetool
+    .zoom
+      %dl
+        %dt Zoom:
+        %dd
+          %a.first.datechoice{:href => "#"} 6h
+        %dd
+          %a.datechoice{:href => "#"} 12h
+        %dd
+          %a.datechoice{:href => "#"} 1d
+        %dd
+          %a.datechoice{:href => "#"} 2d
+        %dd
+          %a.datechoice{:href => "#"} 1w
+        %dd
+          %a.selected.datechoice{:href => "#"} 2w
+        %dd
+          %a.datechoice{:href => "#"} 4w
+        %dd
+          %a.datechoice{:href => "#"} 1y
+    .range
+      %dl
+        %dt Date Range:
+        %dd
+          %a.btn-slide{:href => ""} YYYY/MM/DD - YYYY/MM/DD
+    %br{:style => "clear:both; margin-bottom:0.5em;"}/
+    #ws_widgetCalendar.widgetCalendar
+  %div
+    %ul#worksheet-graphs
+    %br{:style => "clear:left"}/
+  #streambox{:style => "display:none"}
+  %div{:style => "display:none"}
+    #maingraph-template
+      .plot-area{:style => "width:380px;height:180px"}
+      .plot-legend legend
+  .error
+    %p#ws-tool-error.error
+  #ws_payload

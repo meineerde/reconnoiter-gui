@@ -1,0 +1,13 @@
+%h4#ws-searchterms
+#ws-searchform-container{:style => "margin:.5em 0 2em 0;padding-bottom:1em;border-bottom: solid 1px #e6e4e5;"}
+  %form#ws-searchform
+    %fieldset
+      %p.explain Enter a term to search for worksheets.
+      %legend{:style => "display:none;"} Search
+      %label{:for => "keyword", :style => "display:none;"} Keyword
+      %input#ws-searchinput{:style => "width:220px;", :type => "text"}/
+      %input{:type => "submit", :value => "Search"}/
+#worksheetlist.worksheetlist
+  %p.search-summary
+  %p.paginate
+  %ul.searchresults

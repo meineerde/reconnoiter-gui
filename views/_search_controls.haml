@@ -1,0 +1,21 @@
+%h3#graph_controls Graph Controls
+%span.search
+  .tabs
+    %ul.tabNavigation
+      %li.first
+        %a(href="#first") Graphs
+      %li.second
+        %a(href="#second") Templates
+      %li.third
+        %a(href="#third") Find Data
+      %li.fourth
+        %a(href="#fourth") Browse Data
+    %br(style="clear: all")
+    #first
+      =partial :search_saved_graphs
+    #second
+      =partial :search_templates
+    #third
+      =partial :search_simple
+    #fourth
+      =partial :search_browser

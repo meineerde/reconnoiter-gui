@@ -1,0 +1,12 @@
+%h4#graph-searchterms
+#graph-searchform-container{:style => "margin:.5em 0 2em 0;padding-bottom:1em;border-bottom: solid 1px #e6e4e5;"}
+  %form#graph-searchform(action="#")
+    %fieldset
+      %legend{:style => "display:none;"} Search
+      %label{:for => "keyword", :style => "display:none;"} Keyword
+      %input#graph-searchinput{:style => "width:220px;", :type => "text"}/
+      %input{:type => "submit", :value => "Search"}/
+#graphlist.graphlist
+  %p.search-summary
+  %p.paginate
+  %ul.searchresults

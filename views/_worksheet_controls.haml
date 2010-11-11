@@ -1,0 +1,13 @@
+%h3.worksheet_controls Worksheet Controls
+%span.search
+  .ws-tabs
+    %ul.tabNavigation
+      %li.ws-first
+        %a(href="#ws-first") WorkSheets
+      %li.ws-second
+        %a(href="#ws-second") Find Graphs
+    %br(style="clear: both")
+    #ws-first
+      =partial :ws_search_simple
+    #ws-second
+      =partial :ws_search_graphs
